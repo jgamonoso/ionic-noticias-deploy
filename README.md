@@ -17,3 +17,7 @@ npm i -g cordova-res
 <!-- ionic cordova resources -->
 <!-- ionic cordova resources --force -->
 ionic cordova resources android --force
+
+
+# Para generar el build y levantarlo en Android Studio
+ionic cordova build android
