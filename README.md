@@ -4,13 +4,20 @@ npm i
 # Start on VSC
 ionic serve
 
-
 <!-- Despliegues en las AppStores -->
-# CON CAPACITOR (plataformas + resources)
+# CON CAPACITOR
+# Creating Splash Screens and Icons
 npm i -g cordova-res
 cordova-res android --skip-config --copy
+# (Si falla lo anterior)
 npm uninstall -g cordova-res
 npm i -g cordova-res@0.14.0
+cordova-res android --skip-config --copy
+
+
+
+
+
 
 
 # CON CORDOVA
