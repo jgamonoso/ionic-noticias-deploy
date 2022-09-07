@@ -1,17 +1,34 @@
 # First install dependencies
 npm i
 
-# run app
+# Start on VSC
 ionic serve
+
+
+<!-- Despliegues en las AppStores -->
+# CON CAPACITOR (plataformas + resources)
+npm i -g cordova-res
+cordova-res android --skip-config --copy
+npm uninstall -g cordova-res
+npm i -g cordova-res@0.14.0
+
+
+# CON CORDOVA
+# Si el proyecto era inicialmente de capacitor
+ionic integrations disable capacitor
+# Plataformas
+ionic cordova platform add ios
+ionic cordova platform add android
+# Resources
+ionic cordova resources
+ionic cordova resources --force
+<!-- ---------------------- -->
 
 # Preparations
 # Prepare app to run on Android studio
 "target": "es6" (tsconfig.json)
 Habilitar modo desarrollador
 Habilitar "Instalar via USB" (en móvil físico)
-
-# Start on VSC
-ionic serve
 
 # Generate the www folder
 ionic build
