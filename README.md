@@ -1,6 +1,9 @@
 # First install dependencies
 npm i
 
+# run app
+ionic serve
+
 # Preparations
 # Prepare app to run on Android studio
 "target": "es6" (tsconfig.json)
@@ -18,5 +21,6 @@ ionic build
   # Copy the native platform template into your project
 ionic capacitor add android
 
+ionic capacitor build android
 # live reload capacitor
 ionic capacitor run android --livereload --external
