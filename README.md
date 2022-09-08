@@ -18,6 +18,8 @@ npm i -g cordova-res
 <!-- ionic cordova resources --force -->
 ionic cordova resources android --force
 
-
 # Para generar el build y levantarlo en Android Studio
 ionic cordova build android
+# Si esto da error de ejecución de Java, borrar la carpeta Android dentro de platforms
+# Para que android studio pille los cambios
+Sync project with gradle files
