@@ -10,7 +10,7 @@ ionic serve
 ionic integrations disable capacitor
 # Plataformas
 <!-- ionic cordova platform add ios -->
-ionic cordova platform add android
+ionic cordova platform add android@latest
 # Luego
 npm i -g cordova-res
 # Resources
